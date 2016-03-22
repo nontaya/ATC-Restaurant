@@ -13,13 +13,13 @@ public class MyOpenHelper extends SQLiteOpenHelper{
     private static final int database_version = 1;
 
     private static final String create_user_table = "create table userTABLE (" +
-            "_id integer primery key, " +
+            "_id integer primary key, " +
             "User text, " +
             "Password text," +
             "Name text);";
 
     private static final String create_food_table = "create table foodTABLE (" +
-            "_id integer primery key, " +
+            "_id integer primary key, " +
             "Food text, " +
             "Price text," +
             "Source text);";
