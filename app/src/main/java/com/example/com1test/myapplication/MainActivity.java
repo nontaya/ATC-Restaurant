@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private Button loginButton;
     private String userString, passwordString;
+    private MyMage myMage;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -33,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
         //Bind Wideget
         bindWidget();
+
+        //Request Database
+        myMage = new MyMage(this);
+
 
 
         //Button Controller
