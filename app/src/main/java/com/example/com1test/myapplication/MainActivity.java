@@ -43,11 +43,19 @@ public class MainActivity extends AppCompatActivity {
         //Button Controller
         buttonControoler();
 
+        //Tester Add Value
+        tester();
+
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     } // Main Method
+
+    private void tester() {
+        myMage.addValueToSQLite(1, "user", "pass", "name");
+        myMage.addValueToSQLite(2, "food", "price", "source");
+    }
 
     private void buttonControoler() {
         loginButton.setOnClickListener(new View.OnClickListener() {
